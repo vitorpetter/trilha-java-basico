@@ -1,18 +1,18 @@
-## Getting Started
+## Simulando uma conta Bancária
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+Nessa simulação o usuário, através do terminal, pode preencher os dados de uma conta bancária e posteriormente receber uma mensagem de feedback sobre a criação da conta.
 
-## Folder Structure
+## Classe ContaTerminal.java
 
-The workspace contains two folders by default, where:
+Realiza toda a codificação do programa.
 
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
+## Funcionamento
 
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
+1. Permite que os dados sejam inseridos via terminal sendo que o usuário receberá a mensagem de qual informação será solicitada, exemplo:
+  - Programa: "Agora, digite o número da Agência:"
+  - Usuário: 1021-6 (depois ENTER para o próximo campo)
 
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
+2. Depois de todas as informações terem sido inseridas, o sistema deverá exibir a seguinte mensagem:
 
-## Dependency Management
-
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+"Olá [Nome Cliente], obrigado por criar uma conta em nosso banco, sua agência é [Agencia], conta [Numero] e seu saldo de R$ [Saldo] já está disponível para saque."
+Os campos em [ ] são alterados pelas informações que forem inseridas pelos usuários.
